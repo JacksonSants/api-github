@@ -1,14 +1,24 @@
 .conteudo {
     position: relative;
     display: flex;
+    margin-top: 30px;
     align-items: flex-start;
     justify-content: flex-end;
 }
 
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    justify-content: end;
+}
+
 .background {
-    height: 80vh;
+    height: 100vh;
     position: absolute;
-    left: 0;
+    left: -300px;
+    opacity: 10%;
 }
 
 .info {
@@ -16,7 +26,11 @@
     margin-right: 90px;
     margin-top: 40px;
     color: #fff;
+}
+
+.info div  {
     display: flex;
+    width: 100%;
 }
 
 input {
@@ -28,6 +42,11 @@ input {
     background-color: transparent;
     font-size: 18px;
     padding: 10px;
+    color: #fff;
+}
+
+.info input::placeholder {
+    color: #fff;
 }
 
 button {
@@ -40,4 +59,56 @@ button {
     font-size: 18px;
     padding: 10px;
     color: #fff;
+}
+
+.perfil {
+    display: flex;
+    margin: 40px 0;
+}
+
+.profile {
+    width: 90px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+}
+
+.perfil-description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.perfil-description h3 {
+    color: #999;
+    font-size: 24px;
+    margin: 0;
+}
+
+.perfil-description span{
+    display: block;
+    font-size: 12px;
+    color: #999;
+    margin: 0;
+}
+
+.perfil-description p {
+    color: #999;
+    font-size: 12px;
+    margin: 20px 0 0 0 ;
+}
+
+.description-repository {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-repository h4{
+    font-size: 32px;
+    color: #fff;
+    margin: 12px 0;
+    text-align: center;
+
+
 }
