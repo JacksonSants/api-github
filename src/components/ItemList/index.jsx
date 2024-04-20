@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-function ItemList({ title, description}){
+function ItemList({title, description}){
   return (
     <div className='itemList'>
       <strong>{title}</strong>
